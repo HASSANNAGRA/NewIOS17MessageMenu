@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dashboard_Menu_Buttons_New" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Nz-DZ-T8x">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="sJj-b7-iuZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="systemMaterialLight"/>
+                            </visualEffectView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="R1x-49-RUy">
+                                <rect key="frame" x="0.0" y="61.333333333333314" width="393" height="788.66666666666674"/>
+                                <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="koC-ju-bqz">
+                                <rect key="frame" x="30" y="758" width="363" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="UDB-ZR-OX3"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFx-hk-8g0">
+                                <rect key="frame" x="30" y="738" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VFx-hk-8g0" secondAttribute="height" multiplier="1:1" id="1Qn-wq-M5o"/>
+                                    <constraint firstAttribute="height" constant="50" id="2bg-NX-mUe"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="plus"/>
+                                <connections>
+                                    <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hU1-bY-olY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="2Nz-DZ-T8x" secondAttribute="bottom" id="0vi-c8-nca"/>
+                            <constraint firstItem="koC-ju-bqz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="75Z-zI-yO3"/>
+                            <constraint firstItem="R1x-49-RUy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7Jd-jZ-Uu7"/>
+                            <constraint firstItem="2Nz-DZ-T8x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9lD-ti-CQy"/>
+                            <constraint firstAttribute="bottom" secondItem="R1x-49-RUy" secondAttribute="bottom" id="EaZ-wi-lgp"/>
+                            <constraint firstItem="2Nz-DZ-T8x" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FZI-cD-GMG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Nz-DZ-T8x" secondAttribute="trailing" id="J3B-t8-ZF5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R1x-49-RUy" secondAttribute="trailing" id="WrQ-8g-CA9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VFx-hk-8g0" secondAttribute="bottom" constant="30" id="baK-bG-S14"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="koC-ju-bqz" secondAttribute="trailing" id="dd8-ld-eXe"/>
+                            <constraint firstItem="R1x-49-RUy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eXf-sl-tLY"/>
+                            <constraint firstItem="VFx-hk-8g0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="rjR-h3-psV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="koC-ju-bqz" secondAttribute="bottom" constant="40" id="tQZ-0w-rb8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animView" destination="koC-ju-bqz" id="Kxp-1x-za4"/>
+                        <outlet property="blur" destination="2Nz-DZ-T8x" id="amN-Kf-92Y"/>
+                        <outlet property="button" destination="VFx-hk-8g0" id="Jpd-Y1-DZV"/>
+                        <outlet property="buttonHeight" destination="2bg-NX-mUe" id="goY-Xo-4F5"/>
+                        <outlet property="heightAnimView" destination="UDB-ZR-OX3" id="VSX-Oo-OIC"/>
+                        <outlet property="imageView" destination="R1x-49-RUy" id="9Tk-6z-oYB"/>
+                        <outlet property="leadingAnimView" destination="75Z-zI-yO3" id="pC2-Af-60E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-77.099236641221367" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" width="122" height="122"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+    </resources>
+</document>
